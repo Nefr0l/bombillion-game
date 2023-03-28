@@ -15,8 +15,15 @@ public class Moving : MonoBehaviour
     private float cameraWidth;
     private float halfPlayerSize;
 
+    public GameObject enemy;
+
     void Start()
     {
+        /*for (int i = 0; i < 500; i++)
+        {
+            Instantiate(enemy);
+        }*/
+        
         rb = GetComponent<Rigidbody2D>();
         mainCamera = Camera.main;
         cameraHeight = mainCamera.orthographicSize - 0.5f;
