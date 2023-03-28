@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Moving : MonoBehaviour
@@ -11,8 +12,8 @@ public class Moving : MonoBehaviour
     private Rigidbody2D rb; 
     private bool isMoving; 
     private Camera mainCamera;  
-    private float cameraHeight;    
-    private float cameraWidth;
+    public static float cameraHeight;    
+    public static float cameraWidth;
     private float halfPlayerSize;
 
     public GameObject enemy;
@@ -76,5 +77,11 @@ public class Moving : MonoBehaviour
             newPosition.x = -cameraWidth;
         }
         transform.position = newPosition;
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        Manager.hp -= 1;
+        Destroy(col.gameObject);
     }
 }

@@ -36,6 +36,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../game\Bombillion Wars.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="G:\Unity Projekty\Bombillion Wars\exe" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="G:\Unity\Unity2019\2022.1.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;G:\Unity Projekty\Bombillion Wars\bombillion-wars&quot; -debugCodeOptimization" />
@@ -83,7 +91,8 @@
       <updated>1679937282427</updated>
       <workItem from="1679937286598" duration="1318000" />
       <workItem from="1679943592465" duration="5000" />
-      <workItem from="1679986397567" duration="3943000" />
+      <workItem from="1679986397567" duration="4557000" />
+      <workItem from="1680024510359" duration="1040000" />
     </task>
     <servers />
   </component>

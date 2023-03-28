@@ -31,19 +31,11 @@ public class Enemy : MonoBehaviour
     
     void Update()
     {
-        // Calculate the elapsed time since the movement started
         float timeElapsed = Time.time - startTime;
-
-        // Calculate the distance to move this frame based on the speed
         float distanceToMove = speed * timeElapsed;
-
-        // Calculate the new position
         Vector3 newPosition = startPosition + moveDirection * distanceToMove;
-
-        // Set the object's position to the new position
         transform.position = newPosition;
-
-        // Destroy the object if it has been alive for longer than the lifespan
+        
         if (Time.time - startTime > lifespan)
         {
             Destroy(gameObject);
