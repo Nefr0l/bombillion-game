@@ -37,7 +37,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../game\Bombillion Wars.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../game v2\Bombillion Wars.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="G:\Unity Projekty\Bombillion Wars\exe" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -92,7 +92,8 @@
       <workItem from="1679937286598" duration="1318000" />
       <workItem from="1679943592465" duration="5000" />
       <workItem from="1679986397567" duration="4557000" />
-      <workItem from="1680024510359" duration="1040000" />
+      <workItem from="1680024510359" duration="1870000" />
+      <workItem from="1680072241769" duration="645000" />
     </task>
     <servers />
   </component>
