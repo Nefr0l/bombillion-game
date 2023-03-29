@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Moving : MonoBehaviour
@@ -16,15 +17,10 @@ public class Moving : MonoBehaviour
     public static float cameraWidth;
     private float halfPlayerSize;
 
-    public GameObject enemy;
+    public AudioClip hitClip;
 
     void Start()
     {
-        /*for (int i = 0; i < 500; i++)
-        {
-            Instantiate(enemy);
-        }*/
-        
         rb = GetComponent<Rigidbody2D>();
         mainCamera = Camera.main;
         cameraHeight = mainCamera.orthographicSize - 0.5f;
@@ -58,7 +54,7 @@ public class Moving : MonoBehaviour
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
         
-        // Limit the player's movement to within the game window
+        // Limit poruszania się gracza do wewnątrz ekranu
         Vector3 newPosition = transform.position;
         if (transform.position.y > cameraHeight)
         {
@@ -82,6 +78,7 @@ public class Moving : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         Manager.hp -= 1;
+        GameObject.Find("audio").GetComponent<AudioSource>().PlayOneShot(hitClip);
         Destroy(col.gameObject);
     }
 }
