@@ -1733,8 +1733,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSpeed: 5
   rotateSpeed: 100
-  brakingSpeed: 6
-  maxSpeed: 7
+  brakingSpeed: 7
+  maxSpeed: 6.8
   hitClip: {fileID: 8300000, guid: 22b8b3fe15b7bd245b9f90411cc04ca5, type: 3}
 --- !u!212 &1980734568
 SpriteRenderer:
