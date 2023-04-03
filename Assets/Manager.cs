@@ -4,21 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
-    // Zmienne - Gra
-    public GameObject enemy;
     public static int hp;
-    
-    // Zmienne - UI
-    public string healthTextPrefix = "HP - ";
+    public string healthTextPrefix;
     public TextMeshProUGUI healthText;
     public GameObject gameOverPanel;
 
     private float score;
     private float bestScore;
-    public string scoreTextPrefix = "score - ";
+    public string scoreTextPrefix;
     public TextMeshProUGUI scoreText;
-    
-    // Zmienne - Dźwięk
+
+    public GameObject enemy;
     public AudioSource musicSource;
     public AudioSource audioSource;
     public AudioClip gameOverSound;
@@ -26,16 +22,14 @@ public class Manager : MonoBehaviour
     
     void Start()
     {
-        if (PlayerPrefs.HasKey("bestScore"))
-        {
-            bestScore = PlayerPrefs.GetFloat("bestScore");
-        }
+        hp = 3;
         playedDeathSound = false;
         Time.timeScale = 1.0f;
         gameOverPanel.SetActive(false);
+        
+        if (PlayerPrefs.HasKey("bestScore")) bestScore = PlayerPrefs.GetFloat("bestScore");
         gameOverPanel.transform.position = GameObject.Find("Canvas").transform.position;
-        hp = 3;
-        InvokeRepeating("SpawnEnemy",1f,0.5f);
+        InvokeRepeating(nameof(SpawnEnemy),1f,0.5f);
     }
 
     void Update()
@@ -48,27 +42,16 @@ public class Manager : MonoBehaviour
         {
             Time.timeScale = 0;
             musicSource.Stop();
-            if (!playedDeathSound) { 
+            if (!playedDeathSound) 
+            {
                 audioSource.PlayOneShot(gameOverSound);
                 playedDeathSound = true;
             }
-
-            if (score >= bestScore)
-            {
-                PlayerPrefs.SetFloat("bestScore", score);
-            }
-            
+            if (score >= bestScore) PlayerPrefs.SetFloat("bestScore", score);
             gameOverPanel.SetActive(true);
         }
     }
 
-    public void SpawnEnemy()
-    {
-        Instantiate(enemy);
-    }
-
-    public static void changeScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
+    public void SpawnEnemy() => Instantiate(enemy);
+    public static void ChangeScene(string sceneName) => SceneManager.LoadScene(sceneName);
 }

@@ -24,15 +24,6 @@ public class Moving : MonoBehaviour
 
     void Update()
     {
-        /*float rotationInput = Input.GetAxisRaw("Horizontal");
-        float thrustInput = Input.GetAxisRaw("Vertical");
-
-        transform.Rotate(0, 0, -rotationInput * rotateSpeed * Time.deltaTime);
-        rb.AddForce(transform.up * (thrustInput * inputSpeed));
-        rb.velocity = rb.velocity.normalized * Mathf.Max(rb.velocity.magnitude - brakingSpeed * Time.deltaTime, 0);
-        rb.velocity = rb.velocity.normalized * Mathf.Min(rb.velocity.magnitude, maxSpeed);
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -cameraWidth, cameraWidth), Mathf.Clamp(transform.position.y, -cameraHeight, cameraHeight), transform.position.z);*/
-        
         float rotationInput = Input.GetAxisRaw("Horizontal");
         float thrustInput = Input.GetAxisRaw("Vertical");
         
