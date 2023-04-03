@@ -27,7 +27,8 @@ public class Manager : MonoBehaviour
         Time.timeScale = 1.0f;
         gameOverPanel.SetActive(false);
         
-        if (PlayerPrefs.HasKey("bestScore")) bestScore = PlayerPrefs.GetFloat("bestScore");
+        if (PlayerPrefs.HasKey("bestScore")) 
+            bestScore = PlayerPrefs.GetFloat("bestScore");
         gameOverPanel.transform.position = GameObject.Find("Canvas").transform.position;
         InvokeRepeating(nameof(SpawnEnemy),1f,0.5f);
     }
@@ -41,14 +42,15 @@ public class Manager : MonoBehaviour
         if (hp <= 0)
         {
             Time.timeScale = 0;
+            gameOverPanel.SetActive(true);
             musicSource.Stop();
             if (!playedDeathSound) 
             {
                 audioSource.PlayOneShot(gameOverSound);
                 playedDeathSound = true;
             }
-            if (score >= bestScore) PlayerPrefs.SetFloat("bestScore", score);
-            gameOverPanel.SetActive(true);
+            if (score >= bestScore) 
+                PlayerPrefs.SetFloat("bestScore", score);
         }
     }
 

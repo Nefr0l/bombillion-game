@@ -39,11 +39,9 @@ public class Moving : MonoBehaviour
             isMoving = rb.velocity.magnitude > 0;
         }
 
-        if (rb.velocity.magnitude > maxSpeed)
-        {
+        if (rb.velocity.magnitude > maxSpeed) 
             rb.velocity = rb.velocity.normalized * maxSpeed;
-        }
-
+        
         float newX = Mathf.Clamp(transform.position.x, -cameraWidth, cameraWidth); // Ustala zmienną na wartość bliższą ujemnej lub dodatniej szerokości kamery
         float newY = Mathf.Clamp(transform.position.y, -cameraHeight, cameraHeight);
         Vector3 newPosition = new Vector3(newX, newY, transform.position.z);

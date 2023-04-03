@@ -36,7 +36,8 @@ public class Enemy : MonoBehaviour
         Vector3 newPosition = startPosition + moveDirection * distanceToMove;
         transform.position = newPosition;
         
-        if (Time.time - startTime > lifespan) Destroy(gameObject);
+        if (Time.time - startTime > lifespan) 
+            Destroy(gameObject);
     }
 
     public Vector2 ReturnStartPosition()
