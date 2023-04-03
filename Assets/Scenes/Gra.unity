@@ -275,8 +275,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -828,7 +828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011449, y: 0.000013351}
+  m_AnchoredPosition: {x: 0.000011449, y: -18}
   m_SizeDelta: {x: 306.54, y: 57.9791}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1260362727
@@ -960,8 +960,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000060081, y: 121}
-  m_SizeDelta: {x: 410.1147, y: 103.9811}
+  m_AnchoredPosition: {x: -0.000061035, y: 177.14}
+  m_SizeDelta: {x: 557.1707, y: 103.9811}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1279552568
 MonoBehaviour:
@@ -1010,8 +1010,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 56
+  m_fontSizeBase: 56
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 35
+  m_characterSpacing: 46
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1145,8 +1145,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1309,8 +1309,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -5.899994}
-  m_SizeDelta: {x: 200, y: 37.4773}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 241.9092, y: 52}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1752184919
 MonoBehaviour:
@@ -1359,8 +1359,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 20
+  m_characterSpacing: 24
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1446,7 +1446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011449, y: -81}
+  m_AnchoredPosition: {x: 0.000011449, y: -105}
   m_SizeDelta: {x: 306.54, y: 57.9791}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768589671
@@ -1578,8 +1578,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -43.377}
-  m_SizeDelta: {x: 200, y: 21.6658}
+  m_AnchoredPosition: {x: -0.00074387, y: -52}
+  m_SizeDelta: {x: 241.91, y: 22.957}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1958596002
 MonoBehaviour:
@@ -1628,8 +1628,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1638,7 +1638,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 10
+  m_characterSpacing: 16
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1734,8 +1734,8 @@ MonoBehaviour:
   inputSpeed: 5
   rotateSpeed: 100
   brakingSpeed: 7
-  maxSpeed: 6.8
-  hitClip: {fileID: 8300000, guid: 22b8b3fe15b7bd245b9f90411cc04ca5, type: 3}
+  maxSpeed: 8
+  hitSound: {fileID: 8300000, guid: 22b8b3fe15b7bd245b9f90411cc04ca5, type: 3}
 --- !u!212 &1980734568
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_TextContainerEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,7 +38,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../game v2\Bombillion Wars.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../v1.1\Bombillion Game.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="G:\Unity Projekty\Bombillion Wars\exe" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -93,7 +94,9 @@
       <workItem from="1679943592465" duration="5000" />
       <workItem from="1679986397567" duration="4557000" />
       <workItem from="1680024510359" duration="1870000" />
-      <workItem from="1680072241769" duration="5422000" />
+      <workItem from="1680072241769" duration="6088000" />
+      <workItem from="1680535571294" duration="1574000" />
+      <workItem from="1680537402663" duration="736000" />
     </task>
     <servers />
   </component>
