@@ -8,8 +8,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_TextContainerEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -96,7 +94,9 @@
       <workItem from="1680024510359" duration="1870000" />
       <workItem from="1680072241769" duration="6088000" />
       <workItem from="1680535571294" duration="1574000" />
-      <workItem from="1680537402663" duration="2294000" />
+      <workItem from="1680537402663" duration="5937000" />
+      <workItem from="1680553935029" duration="817000" />
+      <workItem from="1680591203148" duration="680000" />
     </task>
     <servers />
   </component>

@@ -24,10 +24,22 @@ public class Moving : MonoBehaviour
 
     void Update()
     {
+        UpdateRotation();
+        UpdateThrust();
+        SpeedControl();
+        StickPlayerToTheGameWindow();
+    }
+
+    private void UpdateRotation()
+    {
         float rotationInput = Input.GetAxisRaw("Horizontal");
+        transform.Rotate(0, 0, -rotationInput * rotateSpeed * Time.deltaTime);
+    }
+
+    private void UpdateThrust()
+    {
         float thrustInput = Input.GetAxisRaw("Vertical");
         
-        transform.Rotate(0, 0, -rotationInput * rotateSpeed * Time.deltaTime);
         if (thrustInput != 0)
         {
             rb.AddForce(transform.up * (thrustInput * inputSpeed));
@@ -38,12 +50,19 @@ public class Moving : MonoBehaviour
             rb.velocity = rb.velocity.normalized * Mathf.Max(rb.velocity.magnitude - brakingSpeed * Time.deltaTime, 0);
             isMoving = rb.velocity.magnitude > 0;
         }
+    }
 
+    private void SpeedControl()
+    {
         if (rb.velocity.magnitude > maxSpeed) 
             rb.velocity = rb.velocity.normalized * maxSpeed;
-        
+    }
+
+    private void StickPlayerToTheGameWindow()
+    {
         float newX = Mathf.Clamp(transform.position.x, -cameraWidth, cameraWidth); // Ustala zmienną na wartość bliższą ujemnej lub dodatniej szerokości kamery
         float newY = Mathf.Clamp(transform.position.y, -cameraHeight, cameraHeight);
+        
         Vector3 newPosition = new Vector3(newX, newY, transform.position.z);
         transform.position = newPosition;
     }

@@ -351,7 +351,7 @@ AudioSource:
   m_GameObject: {fileID: 503279734}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4749666122026067441, guid: 3573c7c279003a246866c0fd979d748d, type: 2}
   m_audioClip: {fileID: 8300000, guid: fc76e99239321854b811b866110bfe24, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.9
@@ -550,12 +550,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73b7b909d291754c9dad4162c383d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1825380329451416506, guid: dcb5a296b2cc89a4c8c2fff479fe224c, type: 3}
   healthTextPrefix: 'HP - '
   healthText: {fileID: 1752184919}
   gameOverPanel: {fileID: 1690617988}
   scoreTextPrefix: 'score - '
   scoreText: {fileID: 1958596002}
+  enemy: {fileID: 1825380329451416506, guid: dcb5a296b2cc89a4c8c2fff479fe224c, type: 3}
   musicSource: {fileID: 503279735}
   audioSource: {fileID: 1188849405}
   gameOverSound: {fileID: 8300000, guid: 3d8d55a38a391794e9cc5d64ba30e830, type: 3}
@@ -689,7 +689,7 @@ AudioSource:
   m_GameObject: {fileID: 1188849404}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3591699453522991379, guid: 3573c7c279003a246866c0fd979d748d, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1310,7 +1310,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 241.9092, y: 45.5757}
+  m_SizeDelta: {x: 241.9092, y: 43.3128}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1752184919
 MonoBehaviour:
@@ -1578,7 +1578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.00043869, y: -45.576}
+  m_AnchoredPosition: {x: -0.00043869, y: -43.313}
   m_SizeDelta: {x: 241.91, y: 22.957}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1958596002
