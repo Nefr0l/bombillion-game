@@ -18,7 +18,8 @@ public class Menu : MonoBehaviour
     void Start()
     {
         scoreText.text = "best score - " + (int)PlayerPrefs.GetFloat("bestScore");
-        if (PlayerPrefs.HasKey("fxVolume")) ReadVolumeData(); 
+        if (PlayerPrefs.HasKey("fxVolume")) 
+            ReadVolumeData(); 
     }
 
     private void ReadVolumeData()
@@ -53,7 +54,8 @@ public class Menu : MonoBehaviour
         SaveVolumeData();
     }
 
-    public static void ChangeScene(string sceneName) => SceneManager.LoadScene(sceneName);
+    public static void ChangeScene(string sceneName) 
+        => SceneManager.LoadScene(sceneName);
 
     public void OpenPanel(GameObject panel)
     {

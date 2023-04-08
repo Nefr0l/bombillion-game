@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Moving : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public float inputSpeed;
     public float rotateSpeed;
@@ -69,8 +69,16 @@ public class Moving : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Manager.hp -= 1;
-        GameObject.Find("audio").GetComponent<AudioSource>().PlayOneShot(hitSound);
+        if (col.gameObject.CompareTag("enemy"))
+        {
+            Manager.hp -= 1;
+            GameObject.Find("audio").GetComponent<AudioSource>().PlayOneShot(hitSound);
+        }
+        else if (col.gameObject.CompareTag("hp"))
+        {
+            Manager.hp += 1;
+        }
+
         Destroy(col.gameObject);
     }
 }
