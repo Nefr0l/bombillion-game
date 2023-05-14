@@ -1,5 +1,6 @@
- # Bombillion Game
-Very realistic bombillion simulator made with Unity
+![text](https://i.ibb.co/h2ggwKW/Header.png)
+## About
+Bombillion Game is a simple 2d game inspired by the "Asteroids" where your goal is to survive as long as you can flying around with your Bombillion and avoiding enemies.
 
 ## Instalation
 Download and unpack .zip file with .exe and other files needed to run the game. Launch .exe file and that's it
